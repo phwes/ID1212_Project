@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rock Paper Scissors Games</title>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+        <h1>Rock Paper Scissors</h1>        
+        </header>
+
+        <div class="score-board">
+            <div id="user1-label" class="badge">Player</div>
+            <div id="user2-label" class="badge">Opponent</div>
+            <span id="user1-score">0</span> : <span id="user2-score">0</span>
+        </div>
+
+        <div class="result">
+            <p>Let's Play!</p>
+        </div>
+
+        <div class="choices">
+            <div class="choice" id="Rock">
+                <img src="images/rock.png" alt="" style="width:10em; height:10em">
+            </div> 
+            <div class="choice" id="Paper">
+                <img src="images/paper.png" alt="" style="width:10em; height:10em"> 
+            </div> 
+            <div class="choice" id="Scissor">
+                    <img src="images/scissor.png" alt="" style="width:10em; height:10em;">
+            </div> 
+        </div>
+        <p id="action-msg">Make your move.</p>
+        <div class ="test">
+            <ul id="events"></ul>
+        </div>
+        <script src="/socket.io/socket.io.js"></script> 
+        <script src="src/client.js"></script>
+    </body>
+</html>
